@@ -16,6 +16,7 @@ class _PostApiScreenState extends State<PostApiScreen> {
   Address? addrDetails;
   TariffDetails? tarDetails ;
   Coupinos_Model? basicInfo;
+  String baseUrl = 'https://coupinos-app.azurewebsites.net';
 
   @override
   void initState() {
@@ -68,7 +69,7 @@ class _PostApiScreenState extends State<PostApiScreen> {
                               return Column(
                                 children: [
                                   Container(
-                                    child:Image.network('${contDetails!.profilePic}'),
+                                    child:Image.network(baseUrl+'${contDetails!.profilePic}'),
                                         width: 100,
                                         height: 100,
                                   ),
