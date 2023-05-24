@@ -45,7 +45,7 @@ class ContactPerson {
   final String? firstName;
   final String? lastName;
   final String? email;
-  final String? dob;
+  final DateTime? dob;
   final String? gender;
   final String? profilePic;
 
@@ -61,7 +61,7 @@ class ContactPerson {
       ContactPerson(firstName: json['firstName'] as String? ?? '',
           lastName: json['lastName'] as String? ?? '',
           email: json['email'] as String? ?? '',
-          dob: json['dob'] as String? ?? '',
+          dob: DateTime.parse(json['dob']),
           gender: json['gender'] as String? ?? '',
           profilePic: json['profilePic'] as String? ?? '');
 }

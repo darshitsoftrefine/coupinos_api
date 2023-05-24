@@ -78,7 +78,7 @@ class _PostApiScreenState extends State<PostApiScreen> {
                                   SizedBox(height: 10,),
                                   Text("Email-Id: "+'${contDetails!.email}',style: TextStyle(fontSize: 20, color: Colors.blue)),
                                   SizedBox(height: 10,),
-                                  Text("DOB: "+'${contDetails!.dob}', style: TextStyle(fontSize: 20,)),
+                                  Text("DOB: "+'${contDetails!.dob!.day}'+'/'+'${contDetails!.dob!.month}'+'/'+'${contDetails!.dob!.year}', style: TextStyle(fontSize: 20,)),
                                   SizedBox(height: 10,),
                                   Text("Gender: "+'${contDetails!.gender}', style: TextStyle(fontSize: 20)),
 SizedBox(height: 40,),
