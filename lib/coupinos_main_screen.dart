@@ -69,7 +69,15 @@ class _PostApiScreenState extends State<PostApiScreen> {
                               return Column(
                                 children: [
                                   Container(
-                                    child:Image.network(baseUrl+'${contDetails!.profilePic}'),
+                                    child: CircleAvatar(
+                                    backgroundColor: Colors.black,
+                                      radius: 130,
+                                      child: CircleAvatar(
+                                        radius: 115,
+                                        backgroundImage: NetworkImage(baseUrl+'${contDetails!.profilePic}'),
+                                      ),
+                              ),
+                                    // Image.network(baseUrl+'${contDetails!.profilePic}'),
                                         width: 100,
                                         height: 100,
                                   ),
